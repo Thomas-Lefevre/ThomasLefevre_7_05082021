@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Petits Plats</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <figure class="logo">
+            <img class="logo__image" src="public/img/logo_les_petits_plats.png" alt="logo Les petits plats">
+        </figure>
+    </header>
+    <main>
+        <section class="recherche">
+            <div class="rechercheAvance">
+                <input class="rechercheAvance__input" type="search" name="recherche" id="recherche"
+                    placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette">
+                <button class="rechercheAvance__button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="rechercheTag">
+                <div class="rechercheIngredient">
+                    <input class="rechercheIngredient__input" type="search" name="ingredient" id="ingredient"
+                        placeholder="Ingrédient">
+                    <button class="rechercheIngredient__button"><i class="fas fa-angle-down"></i></i></button>
+                </div>
+                <div class="rechercheAppareil">
+                    <input class="rechercheAppareil__input" type="search" name="appareil" id="appareil"
+                        placeholder="Appareil">
+                    <button class="rechercheAppareil__button"><i class="fas fa-angle-down"></i></i></button>
+                </div>
+                <div class="rechercheUstensiles">
+                    <input class="rechercheUstensiles__input" type="search" name="ustensiles" id="ustensiles"
+                        placeholder="Ustensiles">
+                    <button class="rechercheUstensiles__button"><i class="fas fa-angle-down"></i></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="listeRecettes">
+
+        </section>
+    </main>
+    <script src="public/js/factories/RecettesFactory.js"></script>
+    <script src="public/js/index.js"></script>
+</body>
+
+</html>

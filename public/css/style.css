@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 30px 0;
+}
+
+.logo {
+  width: 25%;
+}
+.logo__image {
+  width: 100%;
+  height: 100%;
+}
+
+.rechercheAvance {
+  width: 100%;
+  height: 4em;
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+.rechercheAvance__input {
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 15px;
+  width: 95%;
+  font-size: 1em;
+  height: 100%;
+}
+.rechercheAvance__button {
+  width: 5%;
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 2em;
+}
+@media only screen and (max-width: 700px) {
+  .rechercheAvance__button {
+    font-size: 1em;
+  }
+}
+
+.rechercheTag {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+  .rechercheTag {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .rechercheTag {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.rechercheIngredient {
+  height: 4em;
+  display: inline-flex;
+  width: 30%;
+}
+@media only screen and (max-width: 700px) {
+  .rechercheIngredient {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+.rechercheIngredient__input {
+  background-color: #3282f7;
+  color: white;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 15px;
+  font-size: 1em;
+  height: 100%;
+  width: 85%;
+}
+.rechercheIngredient__button {
+  background-color: #3282f7;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 0 15px 0 0;
+  font-size: 1.5em;
+  width: 15%;
+}
+
+.rechercheAppareil {
+  height: 4em;
+  display: inline-flex;
+  width: 30%;
+}
+@media only screen and (max-width: 700px) {
+  .rechercheAppareil {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+.rechercheAppareil__input {
+  background-color: #68d9a4;
+  color: white;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 15px;
+  font-size: 1em;
+  height: 100%;
+  width: 85%;
+}
+.rechercheAppareil__button {
+  background-color: #68d9a4;
+  color: white;
+  padding: 0 15px 0 0;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 1.5em;
+  width: 15%;
+}
+
+.rechercheUstensiles {
+  height: 4em;
+  display: inline-flex;
+  width: 30%;
+}
+@media only screen and (max-width: 700px) {
+  .rechercheUstensiles {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+.rechercheUstensiles__input {
+  background-color: #ed6454;
+  color: white;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 15px;
+  font-size: 1em;
+  height: 100%;
+  width: 85%;
+}
+.rechercheUstensiles__button {
+  background-color: #ed6454;
+  color: white;
+  padding: 0 15px 0 0;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 1.5em;
+  width: 15%;
+}
+
+.listeRecettes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.recette {
+  margin-top: 30px;
+  width: 30%;
+  height: 30em;
+  background-color: #e7e7e7;
+  border-radius: 5px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 701px) and (max-width: 1300px) {
+  .recette {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .recette {
+    width: 100%;
+  }
+}
+.recette__image {
+  width: 100%;
+  height: 50%;
+  background-color: #c7bebe;
+}
+.recette__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+}
+.recette__header__titre {
+  font-weight: 500;
+}
+.recette__header__temps {
+  font-size: 20px;
+  display: flex;
+}
+.recette__body {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 24%;
+}
+.recette__body__ingredients {
+  width: 50%;
+  font-size: 15px;
+}
+.recette__body__description {
+  font-size: 15px;
+  width: 45%;
+  overflow: hidden;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
