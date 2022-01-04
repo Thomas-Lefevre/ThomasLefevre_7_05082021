@@ -1,12 +1,14 @@
 const recipesList = document.querySelector('.listeRecettes');
+const searchBar = document.querySelector('#recherche');
+let recipesArray = [];
 
 function getRecipes() {
     fetch('public/js/recipes.json')
         .then(res => res.json())
-        // .then(data => console.log(data))
         .then(data => {
             data.recipes.forEach(recipe => {
                 displayData(recipe);
+                recipesArray.push(recipe);
             });
         });
 }
@@ -18,3 +20,4 @@ function displayData(recipe) {
 };
 
 getRecipes();
+filteredRecipes(recipesArray, searchBar);
