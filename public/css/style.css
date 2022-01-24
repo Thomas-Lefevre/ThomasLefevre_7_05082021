@@ -106,17 +106,30 @@ header {
   font-size: 1.5em;
   width: 15%;
 }
+.rechercheIngredient--etenduActive {
+  width: 50%;
+}
+.rechercheIngredient--etenduInactive {
+  width: 15%;
+}
 
 .rechercheIngredientAside--active {
-  display: block;
   position: absolute;
+  border-radius: 0 0 5px 5px;
   width: 50%;
-  height: 200px;
+  max-height: 310px;
   top: 4em;
-  background-color: purple;
+  background-color: #3282f7;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
-.rechercheIngredientAside__liste {
-  background: red;
+.rechercheIngredientAside__item {
+  list-style: none;
+  color: white;
+  width: 31%;
+  padding-left: 2%;
+  margin: 5px 0 5px 0;
 }
 .rechercheIngredientAside--inactive {
   display: none;
@@ -152,17 +165,31 @@ header {
   font-size: 1.5em;
   width: 15%;
 }
+.rechercheAppareil--etenduActive {
+  width: 50%;
+}
+.rechercheAppareil--etenduInactive {
+  width: 15%;
+}
 
 .rechercheAppareilAside--active {
-  display: block;
   position: absolute;
+  border-radius: 0 0 5px 5px;
   width: 50%;
-  height: 200px;
+  max-height: 310px;
   top: 4em;
-  background-color: green;
+  left: 25%;
+  background-color: #68d9a4;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
-.rechercheAppareilAside__liste {
-  background: red;
+.rechercheAppareilAside__item {
+  list-style: none;
+  color: white;
+  width: 31%;
+  padding-left: 2%;
+  margin: 5px 0 5px 0;
 }
 .rechercheAppareilAside--inactive {
   display: none;
@@ -198,17 +225,31 @@ header {
   font-size: 1.5em;
   width: 15%;
 }
+.rechercheUstensiles--etenduActive {
+  width: 50%;
+}
+.rechercheUstensiles--etenduInactive {
+  width: 15%;
+}
 
 .rechercheUstensilesAside--active {
-  display: block;
   position: absolute;
+  border-radius: 0 0 5px 5px;
   width: 50%;
-  height: 500px;
+  max-height: 310px;
   top: 4em;
-  background-color: lightblue;
+  left: 50%;
+  background-color: #ed6454;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
-.rechercheUstensilesAside__liste {
-  background: red;
+.rechercheUstensilesAside__item {
+  list-style: none;
+  color: white;
+  width: 31%;
+  padding-left: 2%;
+  margin: 5px 0 5px 0;
 }
 .rechercheUstensilesAside--inactive {
   display: none;

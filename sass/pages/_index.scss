@@ -69,15 +69,22 @@
 
 .rechercheIngredientAside{
     &--active{
-        display: block;
         position: absolute;
+        border-radius: 0 0 5px 5px ;
         width: 50%;
-        height: 200px;
+        max-height: 310px;
         top:4em;
-        background-color: purple;    
+        background-color: $blue;
+        overflow:auto;   
+        display: flex;
+        flex-wrap: wrap; 
     }
-    &__liste{
-        background: red;
+    &__item{
+        list-style: none;
+        color: white;
+        width: 31%;
+        padding-left: 2%;
+        margin: 5px 0 5px 0;
     }
     &--inactive{
         display: none;
@@ -115,15 +122,23 @@
 
 .rechercheAppareilAside{
     &--active{
-        display: block;
         position: absolute;
+        border-radius: 0 0 5px 5px ;
         width: 50%;
-        height: 200px;
+        max-height: 310px;
         top:4em;
-        background-color: green;    
+        left: 25%;
+        background-color: $green;
+        overflow:auto;   
+        display: flex;
+        flex-wrap: wrap; 
     }
-    &__liste{
-        background: red;
+    &__item{
+        list-style: none;
+        color: white;
+        width: 31%;
+        padding-left: 2%;
+        margin: 5px 0 5px 0;
     }
     &--inactive{
         display: none;
@@ -161,15 +176,23 @@
 
 .rechercheUstensilesAside{
     &--active{
-        display: block;
         position: absolute;
+        border-radius: 0 0 5px 5px ;
         width: 50%;
-        height: 500px;
+        max-height: 310px;
         top:4em;
-        background-color: lightblue;    
+        left: 50%;
+        background-color: $red;
+        overflow:auto;   
+        display: flex;
+        flex-wrap: wrap; 
     }
-    &__liste{
-        background: red;
+    &__item{
+        list-style: none;
+        color: white;
+        width: 31%;
+        padding-left: 2%;
+        margin: 5px 0 5px 0;
     }
     &--inactive{
         display: none;

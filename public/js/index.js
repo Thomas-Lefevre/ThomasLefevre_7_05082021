@@ -1,6 +1,5 @@
 const recipesList = document.querySelector('.listeRecettes');
 const searchBar = document.querySelector('#recherche');
-let recipesArray = [];
 
 // function getRecipes() {
 //     recipesArray = [];
