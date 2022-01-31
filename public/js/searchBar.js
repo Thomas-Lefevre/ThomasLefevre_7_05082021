@@ -1,6 +1,6 @@
 function filteredRecipes(recipes, searchBar) {
     searchBar.addEventListener("keyup", (e) => {
-    
+
         if (e.target.value.length >= 3) {
             recipesList.innerHTML = "";
             const research = e.target.value.toLowerCase();
@@ -12,11 +12,12 @@ function filteredRecipes(recipes, searchBar) {
             if (result.length === 0) {
                 recipesList.innerHTML = "Aucune recette ne correspond à votre critère... vous pouvez chercher « tarte aux pommes », « poisson », etc.";
             } else {
-                listenOnInputs(result);
-                result.forEach(result => {
-                    displayData(result)
-                })
+                test(result);
+                // result.forEach(result => {
+                //     displayData(result)
+                // })
             }
+            listenOnInputs(result);
         }
 
         if (e.target.value.length < 3) {
