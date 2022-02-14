@@ -14,18 +14,20 @@ function filteredRecipes(recipes, searchBar) {
                         includesInIngredients = true;
                     }
                 }
-                if (includesInName || includesInDescription || includesInIngredients){
+                if (includesInName || includesInDescription || includesInIngredients) {
                     result.push(recipes[i]);
                     displayData(recipes[i]);
                 }
             }
-            if(result.length===0){
-                recipesList.innerHTML="Il n'y a rien";
+            if (result.length === 0) {
+                recipesList.innerHTML = "Aucune recette ne correspond à votre critère... vous pouvez chercher « tarte aux pommes », « poisson », etc.";
             }
+            listenOnInputs(result);
         }
-        if(e.target.value.length<3){
-            recipesList.innerHTML="";
-            getRecipes();
+        if (e.target.value.length < 3) {
+            recipesList.innerHTML = "";
+            displayRecipes(recipes);
+            listenOnInputs(recipes);
         }
     })
 }
