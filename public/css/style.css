@@ -62,10 +62,28 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
-.listeTag__tag {
+.listeTag__ingredient {
   list-style: none;
   padding: 8px;
   background-color: #3282f7;
+  border-radius: 5px;
+  color: white;
+  margin: 0 1em 1em 0;
+  cursor: pointer;
+}
+.listeTag__appareil {
+  list-style: none;
+  padding: 8px;
+  background-color: #68d9a4;
+  border-radius: 5px;
+  color: white;
+  margin: 0 1em 1em 0;
+  cursor: pointer;
+}
+.listeTag__ustensiles {
+  list-style: none;
+  padding: 8px;
+  background-color: #ed6454;
   border-radius: 5px;
   color: white;
   margin: 0 1em 1em 0;

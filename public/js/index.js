@@ -1,18 +1,6 @@
 const recipesList = document.querySelector('.listeRecettes');
 const searchBar = document.querySelector('#recherche');
 
-// function getRecipes() {
-//     recipesArray = [];
-//     fetch('public/js/recipes.json')
-//         .then(res => res.json())
-//         .then(data => {
-//             data.recipes.forEach(recipe => {
-//                 displayData(recipe);
-//                 recipe = Object.entries(recipe);
-//                 recipesArray.push(recipe);
-//             });
-//         });
-// }
 const getRecipes = async () =>
     await fetch("public/js/recipes.json", {
         mode: "no-cors",
@@ -25,7 +13,7 @@ const getRecipes = async () =>
         .then((res) => res.json())
         .catch((err) => console.log("An error occurs when fetching recipes", err));
 
-function test(recipes) {
+function displayRecipes(recipes) {
     recipes.forEach(recipe => {
         displayData(recipe);
     })
@@ -50,7 +38,7 @@ function generateFilters(recipes) {
 }
 const init = async () => {
     const { recipes } = await getRecipes();
-    test(recipes);
+    displayRecipes(recipes);
     generateFilters(recipes);
     filteredRecipes(recipes, searchBar);
     listenOnInputs(recipes);

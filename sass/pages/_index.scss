@@ -27,10 +27,28 @@
 .listeTag{
     display: flex;
     flex-wrap: wrap;
-    &__tag{
+    &__ingredient{
         list-style: none;
         padding: 8px;
         background-color: $blue;
+        border-radius: 5px;
+        color: white;
+        margin: 0 1em 1em 0;
+        cursor: pointer;
+    }
+    &__appareil{
+        list-style: none;
+        padding: 8px;
+        background-color: $green;
+        border-radius: 5px;
+        color: white;
+        margin: 0 1em 1em 0;
+        cursor: pointer;
+    }
+    &__ustensiles{
+        list-style: none;
+        padding: 8px;
+        background-color: $red;
         border-radius: 5px;
         color: white;
         margin: 0 1em 1em 0;

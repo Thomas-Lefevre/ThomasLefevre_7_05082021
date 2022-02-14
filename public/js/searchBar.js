@@ -12,17 +12,14 @@ function filteredRecipes(recipes, searchBar) {
             if (result.length === 0) {
                 recipesList.innerHTML = "Aucune recette ne correspond à votre critère... vous pouvez chercher « tarte aux pommes », « poisson », etc.";
             } else {
-                test(result);
-                // result.forEach(result => {
-                //     displayData(result)
-                // })
+                displayRecipes(result);
             }
             listenOnInputs(result);
         }
 
         if (e.target.value.length < 3) {
             recipesList.innerHTML = "";
-            test(recipes);
+            displayRecipes(recipes);
             listenOnInputs(recipes);
         }
     })
