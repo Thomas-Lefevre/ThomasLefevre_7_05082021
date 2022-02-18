@@ -109,6 +109,11 @@
         overflow:auto;   
         display: flex;
         flex-wrap: wrap; 
+        @media only screen and (max-width : 700px){
+            top:4em;
+            left: 0;
+            width: 100%;
+        }    
     }
     &__item{
         list-style: none;
@@ -163,7 +168,12 @@
         background-color: $green;
         overflow:auto;   
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
+        @media only screen and (max-width : 700px){
+            top:8.5em;
+            left: 0;
+            width: 100%;
+        }    
     }
     &__item{
         list-style: none;
@@ -219,6 +229,11 @@
         overflow:auto;   
         display: flex;
         flex-wrap: wrap; 
+        @media only screen and (max-width : 700px){
+            top:13.5em;
+            left: 0;
+            width: 100%;
+        }    
     }
     &__item{
         list-style: none;
