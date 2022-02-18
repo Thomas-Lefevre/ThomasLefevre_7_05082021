@@ -150,6 +150,13 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 700px) {
+  .rechercheIngredientAside--active {
+    top: 4em;
+    left: 0;
+    width: 100%;
+  }
+}
 .rechercheIngredientAside__item {
   list-style: none;
   color: white;
@@ -205,6 +212,13 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 700px) {
+  .rechercheAppareilAside--active {
+    top: 8.5em;
+    left: 0;
+    width: 100%;
+  }
+}
 .rechercheAppareilAside__item {
   list-style: none;
   color: white;
@@ -259,6 +273,13 @@ header {
   overflow: auto;
   display: flex;
   flex-wrap: wrap;
+}
+@media only screen and (max-width: 700px) {
+  .rechercheUstensilesAside--active {
+    top: 13.5em;
+    left: 0;
+    width: 100%;
+  }
 }
 .rechercheUstensilesAside__item {
   list-style: none;
